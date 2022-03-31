@@ -3,12 +3,11 @@ from selenium import webdriver
 #driver = webdriver.Chrome(executable_path = "<C:\Users\Ksusha\Documents\chromedriver.exe>")
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-#класс кeys обеспечивает взаимодействие с командами клавиатуры
-class DeeplTranslate(unittest.TestCase): #наследование класса TestCase -это способ сообщения модулю unittest, что это тест
-    def setUp(self): #часть инициализации
+class DeeplTranslate(unittest.TestCase): 
+    def setUp(self): 
         self.driver = webdriver.Chrome(executable_path=r"C:\Users\Ksusha\Documents\chromedriver.exe")
 
-    def test_title_in_deepl_org(self): #метод теста всегда должен начинаться с test
+    def test_title_in_deepl_org(self): 
         driver = self.driver
         driver.get('https://www.deepl.com/translator')
         self.assertIn("DeepL", driver.title)
