@@ -1,6 +1,5 @@
 import unittest
-from selenium import webdriver
-#driver = webdriver.Chrome(executable_path = "<C:\Users\Ksusha\Documents\chromedriver.exe>")
+from selenium import webdriver)
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 class DeeplTranslate(unittest.TestCase): 
