@@ -7,7 +7,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 class DeeplTranslate(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path=r"C:\Users\Ksusha\Documents\chromedriver.exe")
+        self.driver = webdriver.Chrome(executable_path=r"chromedriver.exe")
 
     def test_menu_in_deepl_org(self):
         driver = self.driver
